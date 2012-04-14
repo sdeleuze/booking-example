@@ -84,7 +84,7 @@ public class Hotel {
 
     @Size(max = 50)
     @NotNull
-    @Field(store = Store.NO)
+    @Field
     @NaturalId
     @Column(unique = true)
     public String getName() {
@@ -97,7 +97,7 @@ public class Hotel {
 
     @Size(max = 100)
     @NotNull
-    @Field(store = Store.NO)
+    @Field
     public String getAddress() {
         return address;
     }
@@ -108,7 +108,7 @@ public class Hotel {
 
     @Size(max = 40)
     @NotNull
-    @Field(store = Store.NO)
+    @Field
     public String getCity() {
         return city;
     }
@@ -128,7 +128,7 @@ public class Hotel {
     }
 
     @Size(min = 2, max = 10)
-    @Field(store = Store.NO)
+    @Field
     public String getState() {
         return state;
     }
@@ -139,7 +139,7 @@ public class Hotel {
 
     @Size(min = 2, max = 40)
     @NotNull
-    @Field(store = Store.NO)
+    @Field
     public String getCountry() {
         return country;
     }

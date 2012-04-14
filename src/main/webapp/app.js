@@ -26,14 +26,6 @@ define([ 'lib/resthub',
 		$.route('#/home', function() {
 			$('#content').home();
 		});
-                
-                
-                // Rebuild Lucene index
-                $.ajax({
-                    url : 'api/lucene/rebuild',
-                    dataType : 'json',
-                    type : 'POST'
-                });
 		
 		$.route(location.hash);
 

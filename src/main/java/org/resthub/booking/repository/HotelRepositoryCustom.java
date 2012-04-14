@@ -21,8 +21,4 @@ public interface HotelRepositoryCustom {
 	 */
 	Page<Hotel> find(String query, Pageable pageable);
 
-	/**
-	 * Rebuil full index (Hibernate Search related).
-	 */
-	void rebuildIndex();
 }
